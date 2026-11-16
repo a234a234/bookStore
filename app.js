@@ -1,16 +1,141 @@
 const books = [
-  {id:'metamorphosis',title:'변신',author:'프란츠 카프카',genre:'고전',year:'1915',color:'#405548',ink:'#e9ddb7',en:'THE METAMORPHOSIS',keywords:'부조리 가족 노동',intro:'어느 날 아침 거대한 벌레로 변한 그레고르 잠자. 일할 수 없어진 그와 가족의 관계를 통해 인간의 가치와 소외를 묻는 소설.',titles:['자고 일어났더니 벌레가 됐는데 출근부터 걱정하는 인간이 있다','몸은 벌레가 됐고 머릿속 인사팀은 아직 퇴근을 안 했다','이 집의 가족애에는 급여명세서가 필요하다','침대에서 못 나오는 이유가 월요병 수준을 넘어섰다','가장의 경제활동이 멈추자 집 안의 공기가 달라졌다','인간 자격 심사에 출근 도장을 요구하지 마세요','벌레보다 무서운 건 쓸모를 계산하는 눈빛이었다','등껍질이 생긴 날에도 사장 눈치부터 보는 삶'],review:'몸이 완전히 달라졌는데도 그레고르의 머릿속에서는 출근 걱정이 먼저 돌아간다. 나는 여기서 벌레보다 노동 습관이 더 질기다는 생각을 했다. 가족을 위해 돈을 벌던 사람이 더는 일할 수 없게 되자, 집 안의 관계도 뒤틀린다. 기괴한 설정을 따라 읽다가 어느 순간 내 쓸모를 증명하던 장면이 떠오르는 게 얄밉다. 공포의 원인이 다리 개수에만 있는 책은 아니다.'},
-  {id:'demian',title:'데미안',author:'헤르만 헤세',genre:'소설',year:'1919',color:'#c9b18b',ink:'#453d30',en:'DEMIAN',keywords:'성장 자아 내면',intro:'에밀 싱클레어가 데미안과의 만남을 통해 선과 악의 경계, 자신의 내면과 삶의 방향을 탐색하는 성장소설.',titles:['착하게 살려고 했는데 내 안의 반대파가 너무 시끄럽다','모범생으로 살던 마음에 누가 철거 명령을 내렸다','자아 찾으러 갔다가 내 세계부터 부수게 생겼다','내 인생 사용설명서에 데미안이 낙서를 시작했다','안전한 세계를 떠나라는 말이 이렇게 불친절할 줄은','선과 악을 두 칸으로 나누던 뇌에 공사판이 열렸다','성장이라는 이름의 내부 철거 작업','남의 정답으로 살던 사람에게 찾아온 정답 파업'],review:'싱클레어는 익숙하고 밝은 세계에 머무르고 싶지만, 자기 안에서 들리는 다른 목소리를 외면하지 못한다. 데미안은 그 경계를 가만두지 않는다. 나는 성장소설이면 주인공을 반듯하게 만들어줄 줄 알았는데, 이 책은 반듯함의 기준부터 의심하게 한다. 혼란을 말끔하게 정리해주는 독서를 기대하면 곤란하다. 내 안에 누가 정해놓았는지도 모를 규칙들을 하나씩 꺼내 보게 하는 쪽이다.'},
-  {id:'1984',title:'1984',author:'조지 오웰',genre:'소설',year:'1949',color:'#9e4c39',ink:'#f5e6d1',en:'NINETEEN EIGHTY-FOUR',keywords:'감시 권력 디스토피아',intro:'당의 감시와 통제 아래 살아가는 윈스턴 스미스. 언어와 기록, 기억마저 권력의 대상이 되는 사회를 그린 디스토피아 소설.',titles:['혼자 있는 줄 알았는데 권력이 내 방에 상주하고 있었다','일기를 쓰려는데 국가가 독후감을 검사할 기세다','과거 수정 업무를 하다가 내 기억까지 의심하게 됐다','사생활이라는 단어가 실직한 세계','생각 좀 하려는데 머릿속까지 출입증을 요구한다','말을 줄였더니 생각할 공간도 같이 철거됐다','권력이 기억의 편집권까지 독점해버렸다','이 세계에서는 조용히 있어도 마음이 시끄러우면 곤란하다'],review:'윈스턴이 사는 사회에서는 감시가 생활의 배경음처럼 깔려 있다. 기록을 고치고 언어를 통제하는 권력 앞에서, 나는 거짓말 자체보다 그것을 확인할 기준까지 지워지는 상황이 더 답답했다. 무서운 장치를 구경하는 동안 독자의 기억과 말도 자꾸 점검받는 기분이다. 누가 내 생각을 대신 정리해주면 편하겠다는 마음이 조금이라도 있었다면, 이 책 앞에서는 그 편리함의 견적부터 다시 내게 된다.'},
-  {id:'prince',title:'어린 왕자',author:'앙투안 드 생텍쥐페리',genre:'고전',year:'1943',color:'#3e6580',ink:'#f5e5bd',en:'LE PETIT PRINCE',keywords:'관계 사랑 여행',intro:'사막에 불시착한 비행사가 작은 별에서 온 어린 왕자를 만난다. 여러 별을 여행한 이야기를 통해 관계와 책임, 어른들의 세계를 바라본다.',titles:['작은 별에서 온 아이에게 어른 자격증을 압수당했다','숫자를 잘 세던 어른이 정작 중요한 건 못 봤다','장미 한 송이 때문에 우주의 감정노동이 시작됐다','어른들 업무 평가하러 온 우주 최연소 감사관','행성을 여행했더니 어른들의 이상 행동 도감이 됐다','별 하나쯤 있어도 관계는 여전히 어렵다','길들인다는 말의 청구서가 생각보다 길다','동화인 줄 알고 폈는데 내 어른 흉내가 들통났다'],review:'어린 왕자가 만나는 어른들은 제각각 무언가에 몹시 진지하다. 그런데 그 진지함이 왜 이렇게 우스운지, 읽다가 내 일상도 함께 민망해졌다. 장미와 여우를 둘러싼 이야기는 관계가 예쁜 감정만으로 유지되지 않는다는 쪽으로 마음을 끌고 간다. 짧은 문장이라 가볍게 넘겼다가 뒤늦게 다시 들춰보게 됐다. 아이에게 설명하려고 펼쳤는데, 정작 설명이 필요한 쪽은 나였다는 느낌이다.'},
-  {id:'stranger',title:'이방인',author:'알베르 카뮈',genre:'고전',year:'1942',color:'#d5a55e',ink:'#473c27',en:'L’ÉTRANGER',keywords:'부조리 실존 감정',intro:'알제리에 사는 뫼르소의 삶을 통해 사회가 기대하는 감정과 개인의 감각, 부조리한 인간 조건을 탐색하는 소설.',titles:['감정 표현 양식을 안 지켰더니 세상이 나를 심사한다','슬퍼하는 표정에도 사회 표준 규격이 있었다','이 사람 속마음보다 내 판단 속도가 더 수상하다','울어야 할 때 울지 않은 사람 앞에서 독자가 바빠졌다','공감 버튼을 못 찾겠다고 읽기를 멈출 수는 없었다','태연한 문장 몇 줄이 독자의 평정심을 압수한다','감정 출석부에 결석 도장이 찍혔다','남의 무심함을 견디는 일이 이렇게 피곤할 줄은'],review:'뫼르소의 태연한 서술을 읽으며 나는 자꾸 감정을 대신 채워 넣으려 했다. 슬픔은 이래야 하고 반응은 저래야 한다는 내 기준이 문장 사이에서 유난히 시끄러웠다. 이 소설은 친절한 속마음 설명으로 독자를 달래주지 않는다. 그래서 인물에게 느끼는 거리감 자체가 독서의 일부가 된다. 무심한 문장을 싫어한다고 말하기 전에, 내가 남에게 요구하는 감정의 형식부터 돌아보게 됐다.'},
-  {id:'siddhartha',title:'싯다르타',author:'헤르만 헤세',genre:'철학',year:'1922',color:'#747a50',ink:'#eee5cc',en:'SIDDHARTHA',keywords:'수행 깨달음 삶',intro:'고대 인도를 배경으로 싯다르타가 수행과 세속의 경험을 거치며 자신만의 깨달음을 찾아가는 철학적 소설.',titles:['깨달음 과외를 거절하고 인생 현장실습에 뛰어든 남자','정답을 들었는데도 몸소 헤매겠다는 고집','수행만 하면 될 줄 알았는데 삶 전체가 교재였다','스승의 설명으로는 제출할 수 없는 인생 과제','마음의 평화를 찾으러 나와 마음을 더 써버렸다','지혜를 다운로드하려다 직접 살아보라는 오류가 떴다','깨달음에 지름길이 있다는 내 계획이 퇴짜 맞았다','강물은 흐르는데 내 정답 집착만 제자리였다'],review:'싯다르타는 훌륭한 가르침을 듣고도 자신이 직접 걸어갈 길을 찾는다. 나는 처음에 그 고집이 답답했는데, 읽을수록 남의 지혜를 이해하는 것과 내 삶으로 아는 것이 얼마나 다른지 생각하게 됐다. 수행과 세속의 경험이 깔끔한 우열표로 정리되지 않는 점도 마음에 남았다. 깨달음을 몇 문장으로 요약해서 챙겨가려던 독자에게, 이 소설은 삶을 생략할 수는 없다는 숙제를 조용히 건넨다.'},
-  {id:'room',title:'자기만의 방',author:'버지니아 울프',genre:'에세이',year:'1929',color:'#8c6b79',ink:'#f1ded5',en:'A ROOM OF ONE’S OWN',keywords:'여성 창작 독립',intro:'여성과 소설이라는 주제에서 출발해, 창작을 가능하게 하는 경제적 독립과 사적인 공간, 교육과 전통의 조건을 탐색하는 에세이.',titles:['글은 영혼으로 쓰라더니 방세는 아무도 안 내준다','재능 검사 전에 통장과 방문부터 확인합시다','영감이 찾아왔는데 혼자 있을 공간이 없다','천재가 없었다고요, 공부방 출입문은 열어줬나요','문학의 숭고함을 말하다가 생활비 명세서가 나왔다','창작의 자유에 보증금이 붙어 있었다','재능만 있으면 된다는 말의 누락된 계약 조건','작가가 되라면서 책상은 양보하라는 세계'],review:'울프는 여성과 소설을 이야기하면서 돈과 방을 꺼낸다. 나는 이 현실적인 출발이 추상적인 재능 예찬보다 훨씬 날카롭게 느껴졌다. 글을 쓸 시간과 교육, 혼자 생각할 공간이 누구에게 주어졌는지를 따라가면, 문학의 역사도 단순한 천재 명단으로 보이지 않는다. 영감만 있으면 된다는 말을 편하게 해왔던 사람이라면 잠깐 계산기를 켜게 될 것이다. 생각에도 생활의 조건이 있다는 사실이 오래 남는다.'},
-  {id:'gatsby',title:'위대한 개츠비',author:'F. 스콧 피츠제럴드',genre:'소설',year:'1925',color:'#284c55',ink:'#dfc68a',en:'THE GREAT GATSBY',keywords:'욕망 계급 사랑 미국',intro:'1920년대 미국, 닉 캐러웨이가 이웃 개츠비를 관찰하며 부와 욕망, 과거에 대한 집착을 마주하는 소설.',titles:['파티는 초호화인데 마음은 과거에 월세 살고 있다','사람은 이렇게 많고 외로움은 왜 전세를 냈나','돈으로 꾸민 미래에 과거가 입주해 있었다','샴페인 거품 사이로 계급의 벽이 보였다','화려한 파티 초대장에 감정의 미납 내역은 없었다','과거를 복원하겠다는 계획에 예산만 끝없이 늘었다','반짝이는 저택보다 반짝이는 집착이 더 눈부셨다','욕망에 드레스코드를 입히면 덜 외로울 줄 알았다'],review:'개츠비의 화려한 파티를 따라가다가 나는 그 반짝임이 누구를 향하고 있는지 자꾸 생각했다. 닉의 시선을 통해 보이는 부와 관계는 겉보기만큼 자유롭지 않다. 과거를 향한 기대가 현재를 얼마나 크게 차지할 수 있는지, 아름다운 문장 속에서도 묘하게 숨이 막혔다. 호화로운 풍경을 구경하러 들어갔는데 욕망의 유지비를 계산하고 나오게 된 셈이다. 멋진 겉모습과 불편한 속사정이 함께 남는다.'}
+  {
+    "id": "honmono",
+    "title": "혼모노",
+    "author": "성해나",
+    "genre": "소설",
+    "year": "2025",
+    "isbn": "9788936439743",
+    "intro": "진짜와 가짜의 경계를 탐색하는 소설집.",
+    "score": 5,
+    "color": "#405548",
+    "ink": "#f5ead5",
+    "en": "LIBRARY SELECTION",
+    "keywords": "소설 성해나",
+    "titles": [
+      "진짜를 가리려다가 내 판단 기준부터 수사받게 생겼다"
+    ],
+    "review": "진짜와 가짜의 경계를 탐색하는 소설집. 진짜를 가리려다가 내 판단 기준부터 수사받게 생겼다 이 제목은 작품의 주제에 빗댄 편집실의 표현입니다. 인물의 선택과 감정, 관계를 따라가며 내가 당연하게 여겼던 생각을 다시 살펴볼 만합니다. 결말을 미리 찾기보다 어떤 문장에서 내 판단이 멈추는지 기록하며 읽어보세요.",
+    "source": "https://search.kyobobook.co.kr/search?keyword=%ED%98%BC%EB%AA%A8%EB%85%B8"
+  },
+  {
+    "id": "light",
+    "title": "우리가 빛의 속도로 갈 수 없다면",
+    "author": "김초엽",
+    "genre": "소설",
+    "year": "2019",
+    "isbn": "9791190090018",
+    "intro": "과학기술과 인간의 관계, 소외와 연결을 탐색하는 SF 소설집.",
+    "score": 5,
+    "color": "#c9b18b",
+    "ink": "#f5ead5",
+    "en": "LIBRARY SELECTION",
+    "keywords": "소설 김초엽",
+    "titles": [
+      "빛의 속도까지 계산했는데 사람 마음은 아직 도착을 안 했다"
+    ],
+    "review": "과학기술과 인간의 관계, 소외와 연결을 탐색하는 SF 소설집. 빛의 속도까지 계산했는데 사람 마음은 아직 도착을 안 했다 이 제목은 작품의 주제에 빗댄 편집실의 표현입니다. 인물의 선택과 감정, 관계를 따라가며 내가 당연하게 여겼던 생각을 다시 살펴볼 만합니다. 결말을 미리 찾기보다 어떤 문장에서 내 판단이 멈추는지 기록하며 읽어보세요.",
+    "source": "https://search.kyobobook.co.kr/search?keyword=%EC%9A%B0%EB%A6%AC%EA%B0%80%20%EB%B9%9B%EC%9D%98%20%EC%86%8D%EB%8F%84%EB%A1%9C%20%EA%B0%88%20%EC%88%98%20%EC%97%86%EB%8B%A4%EB%A9%B4"
+  },
+  {
+    "id": "father",
+    "title": "아버지의 해방일지",
+    "author": "정지아",
+    "genre": "소설",
+    "year": "2022",
+    "isbn": "9788936438838",
+    "intro": "아버지의 장례를 계기로 딸이 아버지의 삶과 관계를 돌아보는 소설.",
+    "score": 5,
+    "color": "#9e4c39",
+    "ink": "#f5ead5",
+    "en": "LIBRARY SELECTION",
+    "keywords": "소설 정지아",
+    "titles": [
+      "아버지를 다 안다고 생각했는데 내 기억이 부실공사였다"
+    ],
+    "review": "아버지의 장례를 계기로 딸이 아버지의 삶과 관계를 돌아보는 소설. 아버지를 다 안다고 생각했는데 내 기억이 부실공사였다 이 제목은 작품의 주제에 빗댄 편집실의 표현입니다. 인물의 선택과 감정, 관계를 따라가며 내가 당연하게 여겼던 생각을 다시 살펴볼 만합니다. 결말을 미리 찾기보다 어떤 문장에서 내 판단이 멈추는지 기록하며 읽어보세요.",
+    "source": "https://search.kyobobook.co.kr/search?keyword=%EC%95%84%EB%B2%84%EC%A7%80%EC%9D%98%20%ED%95%B4%EB%B0%A9%EC%9D%BC%EC%A7%80"
+  },
+  {
+    "id": "vocabulary",
+    "title": "마음의 어휘력",
+    "author": "조야",
+    "genre": "에세이",
+    "year": "2026",
+    "isbn": null,
+    "intro": "감정을 더 세밀한 언어로 알아보고 표현하는 데 초점을 맞춘 책.",
+    "score": 4,
+    "color": "#747a50",
+    "ink": "#f5ead5",
+    "en": "LIBRARY SELECTION",
+    "keywords": "에세이 조야",
+    "titles": [
+      "내 감정은 장편소설인데 입에서는 짜증 두 글자만 나온다"
+    ],
+    "review": "감정을 더 세밀한 언어로 알아보고 표현하는 데 초점을 맞춘 책. 내 감정은 장편소설인데 입에서는 짜증 두 글자만 나온다 이 제목은 작품의 주제에 빗댄 편집실의 표현입니다. 인물의 선택과 감정, 관계를 따라가며 내가 당연하게 여겼던 생각을 다시 살펴볼 만합니다. 결말을 미리 찾기보다 어떤 문장에서 내 판단이 멈추는지 기록하며 읽어보세요.",
+    "source": "https://search.kyobobook.co.kr/search?keyword=%EB%A7%88%EC%9D%8C%EC%9D%98%20%EC%96%B4%ED%9C%98%EB%A0%A5"
+  },
+  {
+    "id": "excel",
+    "title": "진짜 쓰는 실무 엑셀",
+    "author": "오빠두(전진권)",
+    "genre": "IT",
+    "year": "2022",
+    "isbn": "9791191600704",
+    "intro": "엑셀 함수와 보고서 작성, 데이터 분석 등 실무 활용법을 다루는 책.",
+    "score": 5,
+    "color": "#3e6580",
+    "ink": "#f5ead5",
+    "en": "LIBRARY SELECTION",
+    "keywords": "IT 오빠두(전진권)",
+    "titles": [
+      "퇴근을 막던 범인이 셀 안에 숨어 있었다"
+    ],
+    "review": "엑셀 함수와 보고서 작성, 데이터 분석 등 실무 활용법을 다루는 책. 제목은 이 책이 다루는 작업을 일상의 답답함에 빗대어 표현한 편집실의 감상입니다. 빠르게 읽는 것보다 예제를 직접 실행하고 내 작업에 적용하며 읽는 편을 권합니다. 지식이 자동으로 실력이 되는 것은 아니니, 책 옆에 실습할 화면을 함께 열어두세요.",
+    "source": "https://search.kyobobook.co.kr/search?keyword=%EC%A7%84%EC%A7%9C%20%EC%93%B0%EB%8A%94%20%EC%8B%A4%EB%AC%B4%20%EC%97%91%EC%85%80"
+  },
+  {
+    "id": "python",
+    "title": "혼자 공부하는 파이썬",
+    "author": "윤인성",
+    "genre": "IT",
+    "year": "2022",
+    "isbn": "9791162245651",
+    "intro": "파이썬 기본 문법에서 함수와 클래스까지 학습하는 프로그래밍 입문서.",
+    "score": 4,
+    "color": "#8c6b79",
+    "ink": "#f5ead5",
+    "en": "LIBRARY SELECTION",
+    "keywords": "IT 윤인성",
+    "titles": [
+      "혼자 공부하랬더니 오류 메시지가 자꾸 말을 건다"
+    ],
+    "review": "파이썬 기본 문법에서 함수와 클래스까지 학습하는 프로그래밍 입문서. 제목은 이 책이 다루는 작업을 일상의 답답함에 빗대어 표현한 편집실의 감상입니다. 빠르게 읽는 것보다 예제를 직접 실행하고 내 작업에 적용하며 읽는 편을 권합니다. 지식이 자동으로 실력이 되는 것은 아니니, 책 옆에 실습할 화면을 함께 열어두세요.",
+    "source": "https://search.kyobobook.co.kr/search?keyword=%ED%98%BC%EC%9E%90%20%EA%B3%B5%EB%B6%80%ED%95%98%EB%8A%94%20%ED%8C%8C%EC%9D%B4%EC%8D%AC"
+  },
+  {
+    "id": "clean-code",
+    "title": "클린 코드",
+    "author": "로버트 C. 마틴",
+    "genre": "IT",
+    "year": "2013",
+    "isbn": null,
+    "intro": "읽기 좋고 유지보수하기 쉬운 코드를 작성하는 원칙을 다루는 프로그래밍 책.",
+    "score": 5,
+    "color": "#284c55",
+    "ink": "#f5ead5",
+    "en": "LIBRARY SELECTION",
+    "keywords": "IT 로버트 C. 마틴",
+    "titles": [
+      "코드는 돌아가는데 미래의 내가 나를 고소할 것 같다"
+    ],
+    "review": "읽기 좋고 유지보수하기 쉬운 코드를 작성하는 원칙을 다루는 프로그래밍 책. 제목은 이 책이 다루는 작업을 일상의 답답함에 빗대어 표현한 편집실의 감상입니다. 빠르게 읽는 것보다 예제를 직접 실행하고 내 작업에 적용하며 읽는 편을 권합니다. 지식이 자동으로 실력이 되는 것은 아니니, 책 옆에 실습할 화면을 함께 열어두세요.",
+    "source": "https://search.kyobobook.co.kr/search?keyword=%ED%81%B4%EB%A6%B0%20%EC%BD%94%EB%93%9C"
+  }
 ];
 const KEY='between-lines-library-v1';
 // 서비스에서 정한 주관적 추천 평점이며 독자 평균이 아닙니다.
-const recommendedRatings = { metamorphosis:5, demian:4, '1984':5, prince:5, stranger:4, siddhartha:4, room:5, gatsby:4 };
+const recommendedRatings = {"honmono":5,"light":5,"father":5,"vocabulary":4,"excel":5,"python":4,"clean-code":5};
 let state={saved:[],reviews:{}},view='all',genre='전체',query='',sort='edit',current=null,rating=0,timer;
 const $=s=>document.querySelector(s);
 const escape=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -20,7 +145,7 @@ function persist(){try{localStorage.setItem(KEY,JSON.stringify(state));return tr
 function cover(b){return `<div class="book-cover" style="--cover:${b.color};--type:${b.ink}"><small>${b.en}</small><strong>${b.title}</strong><span>${b.author}<br>문장 사이 · LIBRARY EDITION</span></div>`}
 function toggleSave(id){state.saved=state.saved.includes(id)?state.saved.filter(x=>x!==id):[...state.saved,id];const ok=persist();render();if(current===id)$('#detail-save').textContent=state.saved.includes(id)?'✓ 내 서재에 저장됨':'+ 내 서재에 담기';if(ok)toast(state.saved.includes(id)?'내 서재에 담았어요.':'내 서재에서 꺼냈어요.')}
 function renderOriginal(){let list=books.filter(b=>(genre==='전체'||b.genre===genre)&&`${b.title} ${b.author} ${b.keywords}`.toLowerCase().includes(query.toLowerCase())&&(view!=='saved'||state.saved.includes(b.id))&&(view!=='reviews'||state.reviews[b.id]));if(sort==='title')list.sort((a,b)=>a.title.localeCompare(b.title,'ko'));if(sort==='rating')list.sort((a,b)=>(state.reviews[b.id]?.rating||0)-(state.reviews[a.id]?.rating||0));$('#view-title').textContent=view==='saved'?'내 취향이 모인 책장':view==='reviews'?'내가 남긴 문장들':'오늘, 어떤 책을 펼칠까요?';$('#result-count').textContent=`${list.length}권의 책`;$('#saved-count').textContent=state.saved.length;$('#empty').hidden=list.length>0;$('#book-grid').innerHTML=list.map(b=>{const r=state.reviews[b.id];return `<article class="book-card"><div class="cover-area"><button class="cover-open" data-open="${b.id}" aria-label="${b.title} 상세 보기">${cover(b)}</button><button class="bookmark ${state.saved.includes(b.id)?'selected':''}" data-save="${b.id}" aria-label="${b.title} 내 서재 ${state.saved.includes(b.id)?'해제':'저장'}" aria-pressed="${state.saved.includes(b.id)}">${state.saved.includes(b.id)?'✓':'+'}</button></div><p class="genre">${b.genre} · ${b.year}</p><button class="book-name" data-open="${b.id}">${b.title}</button><p class="author">${b.author}</p><p class="review-hook">${view==='reviews'&&r?escape(r.title):b.titles[0]}</p><div class="rating-line">${r?`<b>★ ${r.rating}.0</b><span>내 평점 · 내 서평 1개</span>`:'<span>☆ 아직 내 평점이 없어요</span>'}</div></article>`}).join('');document.querySelectorAll('[data-view]').forEach(button=>button.classList.toggle('active',button.dataset.view===view));document.querySelectorAll('[data-genre]').forEach(button=>button.classList.toggle('active',button.dataset.genre===genre))}
-function openBook(id){const b=books.find(x=>x.id===id);if(!b)return;current=id;const r=state.reviews[id];rating=r?.rating||0;$('#detail-content').innerHTML=`<div class="detail-top">${cover(b)}<div><span class="label">${b.genre} · ${b.year}</span><h2>${b.title}</h2><p>${b.author}</p><button class="dark-button" id="detail-save">${state.saved.includes(id)?'✓ 내 서재에 저장됨':'+ 내 서재에 담기'}</button></div></div><section class="detail-section"><span class="label">ABOUT THE BOOK</span><h3>이 책을 펼치기 전에</h3><p>${b.intro}</p></section><section class="detail-section"><span class="label">EDITOR’S NOTE · 표현 강도 5 / 5</span><h3>${b.titles[0]}</h3><p>${b.review}</p><details><summary>같은 책, 다른 도발 — 제목 후보 8개</summary><ol>${b.titles.map(t=>`<li>${t}</li>`).join('')}</ol></details><p class="quality">편집실 창작 서평 · 실제 독자 평점에 합산하지 않습니다.<br>점검: 작품 설정과 연결 · 가상 사건·인용 없음 · 주요 반전·결말 제외 · 독자 감상 형식</p></section><section class="detail-section"><span class="label">YOUR OWN WORDS</span><h3>이 책은 당신에게 어땠나요?</h3><form class="review-form" id="review-form"><label>내 평점 (필수)</label><div class="stars" role="group" aria-label="별점 선택">${[1,2,3,4,5].map(n=>`<button type="button" data-rating="${n}" aria-label="${n}점" aria-pressed="${n===rating}" class="${n<=rating?'on':''}">★</button>`).join('')}</div><label for="review-title">서평 제목</label><input id="review-title" maxlength="100" required placeholder="당신만의 한 문장으로 시작해보세요" value="${escape(r?.title||'')}"><label for="review-body">서평 본문</label><textarea id="review-body" rows="5" maxlength="2000" required placeholder="어떤 장면이 남았나요? 당신의 생각을 자유롭게 적어주세요.">${escape(r?.body||'')}</textarea><div class="form-bottom"><button type="submit" class="dark-button">${r?'서평 수정하기':'서평 남기기'} ↗</button>${r?'<button type="button" class="delete" id="delete-review">내 서평 삭제</button>':''}</div></form><div id="published-review">${r?`<div class="my-review"><span class="label">내 서평 · ${'★'.repeat(r.rating)}</span><h4>${escape(r.title)}</h4><p>${escape(r.body)}</p></div>`:''}</div></section>`;$('#detail-save').onclick=()=>toggleSave(id);$('#review-form').onsubmit=e=>{e.preventDefault();const title=$('#review-title').value.trim(),body=$('#review-body').value.trim();if(!rating){toast('별점을 먼저 선택해주세요.');return}if(!title||!body){toast('제목과 본문에 내용을 입력해주세요.');return}state.reviews[id]={rating,title,body};const ok=persist();render();openBook(id);if(ok)toast('당신의 서평을 저장했어요.')};const del=$('#delete-review');if(del)del.onclick=()=>{if(!confirm('이 책에 남긴 내 서평을 삭제할까요?'))return;delete state.reviews[id];persist();render();openBook(id)};if(!$('#detail').open)$('#detail').showModal()}
+function openBook(id){const b=books.find(x=>x.id===id);if(!b)return;current=id;const r=state.reviews[id];rating=r?.rating||0;$('#detail-content').innerHTML=`<div class="detail-top">${cover(b)}<div><span class="label">${b.genre} · ${b.year}</span><h2>${b.title}</h2><p>${b.author}</p><button class="dark-button" id="detail-save">${state.saved.includes(id)?'✓ 내 서재에 저장됨':'+ 내 서재에 담기'}</button></div></div><section class="detail-section"><span class="label">ABOUT THE BOOK</span><h3>이 책을 펼치기 전에</h3><p>${b.intro}</p></section><section class="detail-section"><span class="label">EDITOR’S NOTE · 표현 강도 5 / 5</span><h3>${b.titles[0]}</h3><p>${b.review}</p><details><summary>같은 책, 다른 도발 — 편집 서평 제목</summary><ol>${b.titles.map(t=>`<li>${t}</li>`).join('')}</ol></details><p class="quality">편집실 창작 서평 · 실제 독자 평점에 합산하지 않습니다.<br>점검: 작품 설정과 연결 · 가상 사건·인용 없음 · 주요 반전·결말 제외 · 독자 감상 형식</p></section><section class="detail-section"><span class="label">YOUR OWN WORDS</span><h3>이 책은 당신에게 어땠나요?</h3><form class="review-form" id="review-form"><label>내 평점 (필수)</label><div class="stars" role="group" aria-label="별점 선택">${[1,2,3,4,5].map(n=>`<button type="button" data-rating="${n}" aria-label="${n}점" aria-pressed="${n===rating}" class="${n<=rating?'on':''}">★</button>`).join('')}</div><label for="review-title">서평 제목</label><input id="review-title" maxlength="100" required placeholder="당신만의 한 문장으로 시작해보세요" value="${escape(r?.title||'')}"><label for="review-body">서평 본문</label><textarea id="review-body" rows="5" maxlength="2000" required placeholder="어떤 장면이 남았나요? 당신의 생각을 자유롭게 적어주세요.">${escape(r?.body||'')}</textarea><div class="form-bottom"><button type="submit" class="dark-button">${r?'서평 수정하기':'서평 남기기'} ↗</button>${r?'<button type="button" class="delete" id="delete-review">내 서평 삭제</button>':''}</div></form><div id="published-review">${r?`<div class="my-review"><span class="label">내 서평 · ${'★'.repeat(r.rating)}</span><h4>${escape(r.title)}</h4><p>${escape(r.body)}</p></div>`:''}</div></section>`;$('#detail-save').onclick=()=>toggleSave(id);$('#review-form').onsubmit=e=>{e.preventDefault();const title=$('#review-title').value.trim(),body=$('#review-body').value.trim();if(!rating){toast('별점을 먼저 선택해주세요.');return}if(!title||!body){toast('제목과 본문에 내용을 입력해주세요.');return}state.reviews[id]={rating,title,body};const ok=persist();render();openBook(id);if(ok)toast('당신의 서평을 저장했어요.')};const del=$('#delete-review');if(del)del.onclick=()=>{if(!confirm('이 책에 남긴 내 서평을 삭제할까요?'))return;delete state.reviews[id];persist();render();openBook(id)};if(!$('#detail').open)$('#detail').showModal()}
 
 let reading = {};
 try { const stored = JSON.parse(localStorage.getItem('bookshelf-reading-v1')); if (stored && typeof stored === 'object') for (const b of books) if (['unread','reading','done'].includes(stored[b.id])) reading[b.id] = stored[b.id]; } catch {}
@@ -32,9 +157,9 @@ function render() {
   $('#best-notice').textContent = '⭐ 별점 5점 추천: ' + (best.length ? best.map(b => b.title).join(', ') : '아직 없어요. 책을 읽고 내 평점을 남겨보세요.');
   const grid = $('#book-grid');
   const cards = Array.from(grid.children);
-  const icons = { '소설': '📖', '고전': '📜', '철학': '💭', '에세이': '✍️' };
+  const icons = { '소설': '📖', '고전': '📜', '철학': '💭', '에세이': '✍️', 'IT': '💻' };
   grid.innerHTML = '';
-  for (const group of ['소설','고전','철학','에세이']) {
+  for (const group of ['소설','에세이','IT']) {
     const matches = cards.filter(card => { const id = card.querySelector('[data-open]').dataset.open; return books.find(b => b.id === id).genre === group; });
     if (!matches.length) continue;
     const section = document.createElement('section');
@@ -45,6 +170,7 @@ function render() {
     const row = document.createElement('div'); row.className = 'simple-grid';
     for (const card of matches) {
       const id = card.querySelector('[data-open]').dataset.open;
+      const book = books.find(b => b.id === id);
       const review = state.reviews[id];
       const score = recommendedRatings[id];
       if (score === 5) { const badge = document.createElement('span'); badge.className = 'best-badge'; badge.textContent = 'BEST'; card.querySelector('.book-name').append(badge); }
@@ -62,4 +188,4 @@ function render() {
 }
 
 document.addEventListener('click',event=>{const open=event.target.closest('[data-open]'),save=event.target.closest('[data-save]'),rate=event.target.closest('[data-rating]');if(open)openBook(open.dataset.open);if(save)toggleSave(save.dataset.save);if(rate){rating=Number(rate.dataset.rating);document.querySelectorAll('[data-rating]').forEach(el=>{el.classList.toggle('on',Number(el.dataset.rating)<=rating);el.setAttribute('aria-pressed',String(Number(el.dataset.rating)===rating))})}});
-document.querySelectorAll('[data-view]').forEach(el=>el.onclick=()=>{view=el.dataset.view;render();$('#catalog').scrollIntoView({behavior:'smooth'})});document.querySelectorAll('[data-genre]').forEach(el=>el.onclick=()=>{genre=el.dataset.genre;render()});$('#search').oninput=e=>{query=e.target.value.trim();render()};$('#sort').onchange=e=>{sort=e.target.value;render()};$('#reset').onclick=()=>{view='all';genre='전체';query='';$('#search').value='';render()};$('#featured-open').onclick=()=>openBook('metamorphosis');$('#close').onclick=()=>$('#detail').close();$('#detail').addEventListener('close',()=>{current=null});$('#detail').addEventListener('click',event=>{if(event.target===$('#detail')){const r=$('#detail').getBoundingClientRect();if(event.clientX<r.left||event.clientX>r.right||event.clientY<r.top||event.clientY>r.bottom)$('#detail').close()}});render();
+document.querySelectorAll('[data-view]').forEach(el=>el.onclick=()=>{view=el.dataset.view;render();$('#catalog').scrollIntoView({behavior:'smooth'})});document.querySelectorAll('[data-genre]').forEach(el=>el.onclick=()=>{genre=el.dataset.genre;render()});$('#search').oninput=e=>{query=e.target.value.trim();render()};$('#sort').onchange=e=>{sort=e.target.value;render()};$('#reset').onclick=()=>{view='all';genre='전체';query='';$('#search').value='';render()};$('#featured-open').onclick=()=>openBook('honmono');$('#close').onclick=()=>$('#detail').close();$('#detail').addEventListener('close',()=>{current=null});$('#detail').addEventListener('click',event=>{if(event.target===$('#detail')){const r=$('#detail').getBoundingClientRect();if(event.clientX<r.left||event.clientX>r.right||event.clientY<r.top||event.clientY>r.bottom)$('#detail').close()}});render();
